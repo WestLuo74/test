@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>下拉菜单实例|菜鸟教程(runoob.com)</title>
+<meta charset="utf-8">
+<style>
+.dropdown {
+  /*position: relative;*/
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+   <div style="border:4px solid blue;">
+        <img src="img/25/1.jpg" />1
+    </div>Test1
+    <div style="border:4px solid red;float:left;">
+        <img src="img/25/2.jpg" />2
+    </div>Test2
+    <div style="border:4px solid green;width:300px;">
+        <img src="img/25/3.jpg" /> 3
+    </div>Test3
+
+<h2>鼠标移动后出现下拉菜单</h2>
+<p>将鼠标移动到指定元素上就能看到下拉菜单。</p>
+
+<div class="dropdown">
+  <span>鼠标移动到我这！</span>
+  <div class="dropdown-content">
+    <p>菜鸟教程</p>
+    <p>www.runoob.com</p>
+  </div>
+</div>
+
+<div class="dropdown">
+  <span>鼠标移动到我这！2</span>
+  <div class="dropdown-content">
+    <p>菜鸟教程2</p>
+    <p>www.runoob.com2</p>
+  </div>
+</div>
+    
+<h2>菜单下内容</h2>
+    
+</body>
+</html>
